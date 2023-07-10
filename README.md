@@ -22,9 +22,9 @@ Created a binary classifier that can predict whether applicants will be successf
 
 5. The preprocessed data is split into training and testing datasets.
 
-6. A StandardScaler instance is created to scale the data.
+6. A **StandardScaler** instance is created to scale the data.
 
-7. The deep learning model is defined using tf.keras.models.Sequential. It consists of two hidden layers with 9 and 18 nodes, respectively, and an output layer with a single node and sigmoid activation.
+7. The deep learning model is defined using **tf.keras.models.Sequential**. It consists of two hidden layers with 9 and 18 nodes, respectively, and an output layer with a single node and sigmoid activation.
 
 8. The model is compiled with binary cross-entropy loss and the Adam optimizer. It is then trained using the training dataset for 50 epochs.
 
@@ -32,7 +32,7 @@ Created a binary classifier that can predict whether applicants will be successf
 
 10. Finally, the trained model is saved to an HDF5 file named 'AlphabetSoupCharity.h5'.
 
-The results of the model training and evaluation are as follows:
+## The results of the model training and evaluation are as follows:
 
 After training for 50 epochs, the model achieved an accuracy of approximately 73.4% on the testing dataset.
 The loss value obtained on the testing dataset was approximately 0.553.
