@@ -18,19 +18,19 @@ Created a binary classifier that can predict whether applicants will be successf
 
 3. The dataset is preprocessed by dropping non-beneficial ID columns ('EIN' and 'NAME') and performing binning for categorical variables ('APPLICATION_TYPE' and 'CLASSIFICATION').
 
-Categorical data is converted to numeric using one-hot encoding.
+4. Categorical data is converted to numeric using one-hot encoding.
 
-The preprocessed data is split into training and testing datasets.
+5. The preprocessed data is split into training and testing datasets.
 
-A StandardScaler instance is created to scale the data.
+6. A StandardScaler instance is created to scale the data.
 
-The deep learning model is defined using tf.keras.models.Sequential. It consists of two hidden layers with 9 and 18 nodes, respectively, and an output layer with a single node and sigmoid activation.
+7. The deep learning model is defined using tf.keras.models.Sequential. It consists of two hidden layers with 9 and 18 nodes, respectively, and an output layer with a single node and sigmoid activation.
 
-The model is compiled with binary cross-entropy loss and the Adam optimizer. It is then trained using the training dataset for 50 epochs.
+8. The model is compiled with binary cross-entropy loss and the Adam optimizer. It is then trained using the training dataset for 50 epochs.
 
-The model's performance is evaluated on the testing dataset, and the loss and accuracy metrics are printed.
+9. The model's performance is evaluated on the testing dataset, and the loss and accuracy metrics are printed.
 
-Finally, the trained model is saved to an HDF5 file named 'AlphabetSoupCharity.h5'.
+10. Finally, the trained model is saved to an HDF5 file named 'AlphabetSoupCharity.h5'.
 
 The results of the model training and evaluation are as follows:
 
